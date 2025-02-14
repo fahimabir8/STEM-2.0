@@ -1,101 +1,107 @@
-<!-- registration_form.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Competition Registration</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="design.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="home.css" />
   </head>
   <body>
-    <div class="bg"></div>
-    <form id="registrationForm" method="post">
-      <img id="form-logo" src="./assets/newBG.png" alt="logo" />
-      <label
-        >Email:
-        <input type="email" name="email" class="input" id="email" required
-      /></label>
+    <section>
+      <img class="banner" src="./assets/STEM_Banner.jpg" alt="banner" />
+    </section>
 
-      <label
-        >Segment Name:
-        <select id="segment" name="segment" required>
-          <option value="">Select a Segment</option>
-          <option value="robo_soccer">Robo Soccer</option>
-          <option value="lfr">LFR</option>
-          <option value="project_showcase">Project Showcase</option>
-          <option value="poster_presentation">Poster Presentation</option>
-          <option value="industrial_problem_solving">
-            Industrial Problem Solving
-          </option>
-          <option value="iq_test">IQ Test</option>
-          <option value="truss_challenge">Truss Challenge</option>
-        </select>
-      </label>
+    <section class="texts">
+      <p>
+        We are pleased to announce that on February 19,
+        <dfn><abbr title="Mechatroics and Embedded System Lab">MESL</abbr></dfn>
+        will host the
+        <abbr title="Science Technology Engineering Mathemetics">STEM</abbr>
+        Challenge 2.0 at the Department of Electrical and Electronic
+        Engineering, Mymensingh Engineering College. This distinguished event is
+        designed to foster innovation, problem-solving, and hands-on experience
+        in the fields of engineering and technology.
+      </p>
 
-      <!-- Inside the form, ABOVE the teamDetails div -->
-      <label
-        >Participant/Leader Name:
-        <input
-          type="text"
-          class="input"
-          name="team_leader_name"
-          id="team_leader_name"
-          required
-      /></label>
-      <label
-        >Participant/Leader Phone No.:
-        <input
-          type="text"
-          class="input"
-          name="team_leader_phone"
-          id="team_leader_phone"
-          required
-      /></label>
-      <label
-        >Participant/Leader Email Address:
-        <input
-          type="email"
-          class="input"
-          name="team_leader_email"
-          id="team_leader_email"
-          required
-      /></label>
+      <p class="mt-4">
+        The STEM Challenge 2.0 offers participants a unique opportunity to
+        engage in competition, collaboration, and skill demonstration. This
+        event will challenge participants to address real-world engineering and
+        embedded system problems through teamwork and technical expertise.
+      </p>
+    </section>
 
-      <!-- Team Details (for team-based segments) -->
-      <div id="teamDetails">
-        <label
-          >Team Name:
-          <input type="text" class="input" name="team_name" id="team_name"
-        /></label>
-        <label
-          >Team Size:
-          <select id="teamSize" name="team_size" id="team_size">
-            <option value="">Select Size</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </label>
-        <div id="teamMembers"></div>
+    <section class="registerNow">
+      <a target="_blank" href="./home.html">
+        <button class="register-btn" id="regBtn">Register Now</button>
+      </a>
+    </section>
+
+    <section class="slideShow">
+      <h2 class="h2">STEM 1.0 RECAP</h2>
+      <br>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/arrange-bots.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/champ.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/fight-1.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/game-end.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/start-game.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/teams-ready.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+          </div>
+      
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
+
+    <footer>
+      <div class="flexBox">
+        <div class="location">
+          <p>
+            <img class="indicator-icon" src="./assets/location.svg" alt="">
+            Mechatroics and Embedded System Lab</p>
+          <p><span class="spaceBefore"></span>Department of EEE</p>
+          <p><span class="spaceBefore"></span>Mymensingh Engineering College</p>
+          <p><span class="spaceBefore"></span>Mymensingh</p>
+        </div>
+        <div class="contact">
+          <p>
+            <img class="indicator-icon pe-2" src="./assets/call.svg" alt="">
+            01645872852</p>
+            <p>
+            <img class="indicator-icon pe-2" src="./assets/mail.svg" alt="">
+            joyroy122004@gmail.com</p>
+        </div>
       </div>
-
-      <label
-        >Transaction ID:
-        <input
-          type="text"
-          class="input"
-          name="transaction_id"
-          id="transaction_id"
-          required
-      /></label>
-
-      <button type="submit">Submit</button>
-    </form>
-
-    <script src="script.js"></script>
-    <script src="auth.js"></script>
+    </footer>
   </body>
 </html>
