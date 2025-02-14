@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "form_festival/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "form_festival/wsgi.py"
+      }
+    ]
+}
