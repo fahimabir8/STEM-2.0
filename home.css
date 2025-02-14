@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+body {
+  background-color: hsl(214, 44%, 8%);
+  color: rgb(216, 241, 255);
+}
+
+a {
+  text-decoration: none;
+}
+
+.banner {
+  width: 100%;
+}
+
+.texts {
+  margin-top: 2em;
+  padding-inline: 1em;
+  font-family: "Nova Square";
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    margin: 1em;
+    border-radius: 1em;
+    box-sizing: border-box;
+  }
+  .texts {
+    text-align: center;
+    font-size: 1.4em;
+  }
+  .banner {
+    border: 2px solid hsl(214, 44%, 15%);
+    border-radius: 1em;
+    box-shadow: 0 0 10px hsla(214, 44%, 13%, 50%);
+  }
+  
+.slideShow img {
+  border-radius: 0.75em;
+  border: 2px solid hsl(214, 44%, 15%);
+}
+}
+
+.register-btn {
+  display: block;
+  margin: 3em auto;
+  padding: 1em 1.25em;
+  border-radius: 0.2em;
+  border: none;
+
+  font-size: 2em;
+  font-family: "Audiowide";
+  text-transform: uppercase;
+
+  color: rgb(197, 229, 255);
+  background-color: hsl(210, 40%, 30%);
+  transition:
+    box-shadow 300ms,
+    transform 300ms,
+    text-shadow 300ms;
+}
+
+.register-btn:hover {
+  transform: translate(0, -10px);
+  text-shadow: 2px 2px 2px dodgerblue;
+  box-shadow: 5px 5px 0 dodgerblue, 5px 5px 50px rgba(30, 143, 255, 0.729);
+}
+
+img {
+  max-height: 100dvh;
+  object-fit: cover;
+}
+
+abbr {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+.slideShow {
+  width: min(100%, 800px);
+  margin-inline: auto;
+}
+
+.slideShow img {
+  height: 50vh;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400;
+  vertical-align: super;
+}
+
+footer {
+  background-color: hsl(214, 44%, 5%);
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  border-radius: 0.75em;
+  margin-top: 2em;
+  color: hsl(210, 40%, 30%);
+  padding: 1em;
+}
+
+.flexBox > * {
+  flex-grow: 1;
+}
+
+footer .flexBox {
+  color: hsl(214, 44%, 15%);
+  display: flex;
+  width: 100%;
+}
+
+.flexBox p {
+  margin: 0;
+  margin-bottom: -5px;
+}

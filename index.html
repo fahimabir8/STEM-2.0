@@ -1,0 +1,101 @@
+<!-- registration_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Competition Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <form id="registrationForm" method="post">
+      <img id="form-logo" src="./assets/newBG.png" alt="logo" />
+      <label
+        >Email:
+        <input type="email" name="email" class="input" id="email" required
+      /></label>
+
+      <label
+        >Segment Name:
+        <select id="segment" name="segment" required>
+          <option value="">Select a Segment</option>
+          <option value="robo_soccer">Robo Soccer</option>
+          <option value="lfr">LFR</option>
+          <option value="project_showcase">Project Showcase</option>
+          <option value="poster_presentation">Poster Presentation</option>
+          <option value="industrial_problem_solving">
+            Industrial Problem Solving
+          </option>
+          <option value="iq_test">IQ Test</option>
+          <option value="truss_challenge">Truss Challenge</option>
+        </select>
+      </label>
+
+      <!-- Inside the form, ABOVE the teamDetails div -->
+      <label
+        >Participant/Leader Name:
+        <input
+          type="text"
+          class="input"
+          name="team_leader_name"
+          id="team_leader_name"
+          required
+      /></label>
+      <label
+        >Participant/Leader Phone No.:
+        <input
+          type="text"
+          class="input"
+          name="team_leader_phone"
+          id="team_leader_phone"
+          required
+      /></label>
+      <label
+        >Participant/Leader Email Address:
+        <input
+          type="email"
+          class="input"
+          name="team_leader_email"
+          id="team_leader_email"
+          required
+      /></label>
+
+      <!-- Team Details (for team-based segments) -->
+      <div id="teamDetails">
+        <label
+          >Team Name:
+          <input type="text" class="input" name="team_name" id="team_name"
+        /></label>
+        <label
+          >Team Size:
+          <select id="teamSize" name="team_size" id="team_size">
+            <option value="">Select Size</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </label>
+        <div id="teamMembers"></div>
+      </div>
+
+      <label
+        >Transaction ID:
+        <input
+          type="text"
+          class="input"
+          name="transaction_id"
+          id="transaction_id"
+          required
+      /></label>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>

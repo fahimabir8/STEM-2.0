@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@100&display=swap");
+
+body {
+  overflow: hidden;
+  padding: 1em;
+  background-color: hsl(214, 47%, 7%);
+}
+
+.bg {
+  /* background-color: #091019; */
+  background-image: url(./assets/bg2.png);
+  position: fixed;
+  inset: -4px;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  filter: blur(0px) brightness(30%);
+}
+
+#registrationForm {
+  padding: 2em;
+  padding-top: 1e;
+  background-color: hsla(210, 100%, 60%, 5%);
+  backdrop-filter: blur(10px);
+  border: 2px solid hsla(0, 0%, 100%, 50%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  color: rgb(170, 170, 170);
+}
+
+#registrationForm::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#form-logo {
+  width: 50%;
+  margin-inline: auto;
+  display: block;
+  border-radius: 50%;
+  margin-inline: auto;
+  object-fit: contain;
+  border: 2px solid hsla(0, 0%, 100%, 50%);
+}
+
+button {
+  background-color: hsl(214, 47%, 7%);
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: hsl(233, 100%, 91%);
+}
+
+button:hover {
+  background-color: darkorange;
+}
+
+input,
+select {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
