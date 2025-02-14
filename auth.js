@@ -70,7 +70,7 @@
     
         console.log("Collected Data:", formData); // Debugging: Check the data structure
     
-        fetch("http://127.0.0.1:8000/api/register/", {
+        fetch("https://festive-form.onrender.com/api/register/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData),

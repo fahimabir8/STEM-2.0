@@ -39,7 +39,11 @@ a {
 .slideShow img {
   border-radius: 0.75em;
   border: 2px solid hsl(214, 44%, 15%);
-}
+  }
+  .flexBox {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .register-btn {
@@ -94,28 +98,34 @@ abbr {
   vertical-align: super;
 }
 
+h2.h2 {
+  font-family: serif;
+}
+
+.registerNow {
+  min-height: 70vh;
+  display: grid;
+  place-content: center;
+}
+
 footer {
   background-color: hsl(214, 44%, 5%);
-  display: flex;
-  align-items: center;
-  gap: 0.25em;
   border-radius: 0.75em;
   margin-top: 2em;
-  color: hsl(210, 40%, 30%);
+  color: hsl(210, 30%, 20%);
   padding: 1em;
 }
 
-.flexBox > * {
-  flex-grow: 1;
-}
-
-footer .flexBox {
-  color: hsl(214, 44%, 15%);
-  display: flex;
-  width: 100%;
-}
-
-.flexBox p {
+footer p {
   margin: 0;
-  margin-bottom: -5px;
+  line-height: 1.6;
 }
+
+.flexBox > * {
+  margin-top: 1em;
+} 
+
+.spaceBefore {
+  margin-inline-start: 1.7em;
+}
+
