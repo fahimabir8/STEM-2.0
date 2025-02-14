@@ -62,7 +62,6 @@ platformdirs
 postgrest
 prompt_toolkit
 propcache
-psycopg2
 psycopg2-binary
 PyJWT
 pyparsing
