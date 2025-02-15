@@ -38,14 +38,13 @@
     </section>
 
     <section class="registerNow">
-      <a target="_blank" href="./home.html">
-        <button class="register-btn" id="regBtn">Register Now</button>
+      <a class="linkA" target="_blank" href="./home.html">
+        <button class="registerBtn" id="regBtn">Register Now</button>
       </a>
     </section>
 
     <section class="slideShow">
       <h2 class="h2">STEM 1.0 RECAP</h2>
-      <br>
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -93,15 +92,35 @@
           <p><span class="spaceBefore"></span>Mymensingh Engineering College</p>
           <p><span class="spaceBefore"></span>Mymensingh</p>
         </div>
+        <div class="vbar"></div>
         <div class="contact">
           <p>
-            <img class="indicator-icon pe-2" src="./assets/call.svg" alt="">
-            01645872852</p>
-            <p>
             <img class="indicator-icon pe-2" src="./assets/mail.svg" alt="">
-            joyroy122004@gmail.com</p>
+            meslmec2023@gmail.com
+          </p>
+          <a target="_blank" href="https://www.facebook.com/MESLMEC">
+            <p>
+              <img class="indicator-icon pe-2 s24" src="./assets/fb.svg" alt="">
+              facebook.com/MESLMEC
+            </p>
+          </a>
         </div>
       </div>
     </footer>
+
+    <script>
+    const hoverItem = document.querySelector('.registerNow');
+    const target = document.querySelector('.registerNow');
+    
+    const hoverItem1 = document.querySelector('.slideShow');
+    const target1 = document.querySelector('footer');
+
+    hoverItem.addEventListener('mouseover', () => {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    hoverItem1.addEventListener('mouseover', () => {
+      target1.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    </script>
   </body>
 </html>
