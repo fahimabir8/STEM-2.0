@@ -44,57 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // registrationForm.addEventListener("submit", function (event) {
-    //     event.preventDefault();
 
-    //     const formData = {
-    //         email: getInputValue("email"),
-    //         segment: getInputValue("segment"),
-    //         team_name: getInputValue("team_name"),
-    //         team_leader_name: getInputValue("team_leader_name"),
-    //         team_leader_phone: getInputValue("team_leader_phone"),
-    //         team_leader_email: getInputValue("team_leader_email"),
-    //         transaction_id: getInputValue("transaction_id"),
-    //         team_size: parseInt(getInputValue("team_size")) || 1,
-    //         team_members: []
-    //     };
-
-    //     // Validate dynamically added fields manually
-    //     let isValid = true;
-    //     if (formData.team_size > 1) {
-    //         for (let i = 2; i <= formData.team_size; i++) {
-    //             let name = getInputValue(`member_${i}_name`);
-    //             let email = getInputValue(`member_${i}_email`);
-    //             let phone = getInputValue(`member_${i}_phone`);
-                
-    //             if (!name || !email || !phone) {
-    //                 alert(`Please fill all fields for Team Member ${i}`);
-    //                 isValid = false;
-    //                 break;
-    //             }
-    //             formData.team_members.push({ name, email, phone });
-    //         }
-    //     }
-
-    //     if (!isValid) return;
-
-    //     console.log("Collected Data:", formData);
-
-    //     fetch("https://festive-form.onrender.com/api/register/", {
-    //         method: "POST",
-    //         headers: { "Content-Type": "application/json" },
-    //         body: JSON.stringify(formData),
-    //     })
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         console.log("Success:", data);
-    //         alert("Registration successful!");
-    //     })
-    //     .catch(error => {
-    //         console.error("Error:", error);
-    //         alert("Registration failed.");
-    //     });
-    // });
 
     function getInputValue(name) {
         return document.querySelector(`[name='${name}']`)?.value.trim() || "";

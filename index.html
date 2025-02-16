@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="home.css" />
-  <!-- <link rel="stylesheet" href="c.css"> -->
+  <link rel="stylesheet" href="c.css">
 </head>
 
 <body>
@@ -49,87 +49,69 @@
 
 
 
-
-    <div class="container">
-    </div>
-
-    <div id="owl-demo1" class="owl-carousel">
-
-
-      <div class="allitem">
-        <div class="blog-allof">
-          <div class="img-date">
-            <img src="./images/arrange-bots.jpg">
-
+    <div class="carousel slide" id="carouselDemo" data-bs-wrap="true" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="./images/arrange-bots.jpg" class="w-100">
           </div>
-          <div class="discretion-blog">
-
-            <h3>Make the most of your platform</h3>
-            <p>Reduce operational costs with no compromise on how you run your business.</p>
+  
+          <div class="carousel-item" data-bs-interval="2000">
+              <img src="./images/champ.jpg" class="w-100">
           </div>
-        </div>
+  
+          <div class="carousel-item">
+              <img src="./images/fight-1.jpg" class="w-100">
+          </div>
+  
+          <div class="carousel-item">
+              <img src="./images/teams-ready.jpg" class="w-100">
+          </div>
+  
+          <div class="carousel-item">
+              <img src="./images/start-game.jpg" class="w-100">
+          </div>
+  
+          <div class="carousel-item">
+              <img src="./images/game-end.jpg" class="w-100">
+          </div>
       </div>
-      <div class="allitem">
-        <div class="blog-allof">
-          <div class="img-date">
-            <img src="./images/champ.jpg">
-
-          </div>
-          <div class="discretion-blog">
-
-
-            <h3>Boost agent productivity</h3>
-            <p>Deliver a personalized customer experience with the right context.</p>
-
-          </div>
-        </div>
+  
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselDemo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+      </button>
+  
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselDemo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+      </button>
+  
+      <div class="carousel-indicators indicator">
+          <button type="button" class="active" data-bs-target="#carouselDemo" data-bs-slide-to="0">
+              <img src="./images/arrange-bots.jpg" />
+          </button>
+  
+          <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="1">
+              <img src="./images/champ.jpg" />
+          </button>
+  
+          <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="2">
+              <img src="./images/fight-1.jpg" />
+          </button>
+  
+          <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="3">
+              <img src="./images/teams-ready.jpg" />
+          </button>
+  
+          <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="4">
+              <img src="./images/start-game.jpg" />
+          </button>
+  
+          <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="5">
+              <img src="./images/game-end.jpg" />
+          </button>
       </div>
-      <div class="allitem">
-        <div class="blog-allof">
-          <div class="img-date">
-            <img src="./images/fight-1.jpg">
+  </div>
+  
 
-          </div>
-          <div class="discretion-blog">
-
-            <h3>User-friendly cloud contact solutions</h3>
-            <p>Designed with the users in mind and can be set up in minutes.</p>
-
-          </div>
-        </div>
-      </div>
-      <!--END OF CAROSEL-->
-
-      <div class="allitem">
-        <div class="blog-allof">
-          <div class="img-date">
-            <img src="./images/game-end.jpg">
-
-          </div>
-          <div class="discretion-blog">
-
-            <h3>Scales with your business</h3>
-            <p>Upgrade your platform and access more benefits as your business grows.</p>
-
-
-          </div>
-        </div>
-      </div>
-
-
-      <!--END OF CAROSEL-->
-
-
-
-      <script src="c.js"></script>
-
-
-
-
-
-
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </section>
 
   <footer>
@@ -159,7 +141,7 @@
     </div>
   </footer>
 
-  <script>
+  <!-- <script>
     const hoverItem = document.querySelector('.registerNow');
     const target = document.querySelector('.registerNow');
 
@@ -172,7 +154,9 @@
     hoverItem1.addEventListener('mouseover', () => {
       target1.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
-  </script>
+  </script> -->
 </body>
 
+<script src="c.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </html>

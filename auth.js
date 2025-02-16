@@ -78,11 +78,11 @@
         .then(response => response.json())
         .then(data => {
             console.log("Success:", data);
-            alert("Registration successful!");
+            window.location.href = "regSuccess.html";
         })
         .catch(error => {
             console.error("Error:", error);
-            alert("Registration failed.");
+            
         });
     });
 
