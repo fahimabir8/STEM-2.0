@@ -1,0 +1,15 @@
+
+.carousel-indicators img{
+  width: 70px;
+  display: block;
+}
+.carousel-indicators button{
+  width: max-content!important;
+}
+.carousel-indicators{
+  position: unset;
+}
+.carousel {
+  position: relative;
+  z-index: 1;
+}
